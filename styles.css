@@ -63,6 +63,329 @@
     --accent-secondary: #76705B;
 }
 
+/* ========================================
+   DARK MODE ONLY STYLES
+   These styles ONLY apply when NOT in light mode
+   ======================================== */
+html:not([data-theme="light"]) {
+    --text-primary: #E8E4DF;
+    --text-secondary: rgba(212, 195, 177, 0.82);
+    --bg-primary: #0f1a1f;
+    --bg-secondary: #1a2a2a;
+    --bg-card: rgba(66, 83, 90, 0.3);
+    --border-color: rgba(212, 195, 177, 0.18);
+    --accent-secondary: #D2B493;
+}
+
+/* Dark mode hero */
+html:not([data-theme="light"]) .hero-title-line:first-child {
+    color: #9CA970;
+}
+
+html:not([data-theme="light"]) .hero-title-line:last-child {
+    color: #D2B493;
+}
+
+html:not([data-theme="light"]) .hero-badge {
+    background: rgba(156, 169, 112, 0.15);
+    border-color: rgba(156, 169, 112, 0.5);
+    color: #D4C3B1;
+}
+
+html:not([data-theme="light"]) .hero-overlay {
+    background: linear-gradient(135deg, rgba(15, 26, 31, 0.9) 0%, rgba(66, 83, 115, 0.6) 100%);
+}
+
+/* Dark mode cards */
+html:not([data-theme="light"]) .event-card,
+html:not([data-theme="light"]) .overview-card,
+html:not([data-theme="light"]) .subteam-card,
+html:not([data-theme="light"]) .division-card,
+html:not([data-theme="light"]) .benefit-card,
+html:not([data-theme="light"]) .package-card,
+html:not([data-theme="light"]) .member-card,
+html:not([data-theme="light"]) .contact-info-card,
+html:not([data-theme="light"]) .quick-link,
+html:not([data-theme="light"]) .media-card {
+    background: rgba(66, 83, 90, 0.28);
+    border-color: rgba(212, 195, 177, 0.14);
+}
+
+html:not([data-theme="light"]) .event-card:hover,
+html:not([data-theme="light"]) .overview-card:hover,
+html:not([data-theme="light"]) .subteam-card:hover,
+html:not([data-theme="light"]) .division-card:hover,
+html:not([data-theme="light"]) .benefit-card:hover,
+html:not([data-theme="light"]) .member-card:hover {
+    border-color: #9CA970;
+    box-shadow: 0 12px 32px rgba(0, 0, 0, 0.4);
+}
+
+/* Dark mode list items */
+html:not([data-theme="light"]) .event-list li {
+    background: rgba(26, 42, 42, 0.7);
+    color: #D4C3B1;
+}
+
+html:not([data-theme="light"]) .division-skills span {
+    background: rgba(26, 42, 42, 0.7);
+    color: #D2B493;
+}
+
+/* Dark mode forms */
+html:not([data-theme="light"]) .form-group input,
+html:not([data-theme="light"]) .form-group select,
+html:not([data-theme="light"]) .form-group textarea {
+    background: rgba(66, 83, 90, 0.3);
+    border-color: rgba(212, 195, 177, 0.18);
+    color: #E8E4DF;
+}
+
+html:not([data-theme="light"]) .form-group input::placeholder,
+html:not([data-theme="light"]) .form-group textarea::placeholder {
+    color: rgba(212, 195, 177, 0.5);
+}
+
+html:not([data-theme="light"]) .form-group input:focus,
+html:not([data-theme="light"]) .form-group select:focus,
+html:not([data-theme="light"]) .form-group textarea:focus {
+    border-color: #9CA970;
+    box-shadow: 0 0 0 3px rgba(156, 169, 112, 0.25);
+}
+
+/* Dark mode contact */
+html:not([data-theme="light"]) .contact-icon {
+    background: rgba(26, 42, 42, 0.7);
+}
+
+/* Dark mode team */
+html:not([data-theme="light"]) .member-avatar {
+    background: rgba(26, 42, 42, 0.5);
+    border-color: #976B58;
+}
+
+html:not([data-theme="light"]) .team-photo {
+    border-color: #976B58;
+}
+
+html:not([data-theme="light"]) .team-card:hover .team-photo {
+    border-color: #D2B493;
+}
+
+html:not([data-theme="light"]) .team-category-title {
+    color: #D2B493;
+    border-bottom-color: rgba(151, 107, 88, 0.5);
+}
+
+html:not([data-theme="light"]) .team-role {
+    color: #D2B493;
+}
+
+/* Dark mode sponsors */
+html:not([data-theme="light"]) .sponsor-logo-large,
+html:not([data-theme="light"]) .sponsor-logo-medium,
+html:not([data-theme="light"]) .sponsor-logo-small {
+    background: rgba(66, 83, 90, 0.25);
+    border-color: rgba(212, 195, 177, 0.14);
+}
+
+html:not([data-theme="light"]) .sponsor-logo-large {
+    border-color: rgba(210, 180, 147, 0.5);
+    background: rgba(210, 180, 147, 0.08);
+}
+
+/* Dark mode milestone */
+html:not([data-theme="light"]) .milestone-year {
+    color: #D2B493;
+}
+
+html:not([data-theme="light"]) .milestone-content {
+    background: rgba(66, 83, 90, 0.3);
+    border-color: #976B58;
+}
+
+html:not([data-theme="light"]) .milestone:hover .milestone-content {
+    border-color: #D2B493;
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.4);
+}
+
+/* Dark mode navigation */
+html:not([data-theme="light"]) .nav.scrolled {
+    background: #0f1a1f;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.4);
+}
+
+html:not([data-theme="light"]) .theme-toggle {
+    background: rgba(66, 83, 90, 0.35);
+    border-color: rgba(212, 195, 177, 0.18);
+}
+
+html:not([data-theme="light"]) .theme-toggle:hover {
+    background: rgba(156, 169, 112, 0.35);
+}
+
+/* Dark mode buttons */
+html:not([data-theme="light"]) .btn-primary {
+    background: #9CA970;
+    color: #0f1a1f;
+    border-color: #9CA970;
+}
+
+html:not([data-theme="light"]) .btn-primary:hover {
+    background: #D2B493;
+    border-color: #D2B493;
+    color: #0f1a1f;
+}
+
+html:not([data-theme="light"]) .btn-secondary {
+    color: #E8E4DF;
+    border-color: #E8E4DF;
+}
+
+html:not([data-theme="light"]) .btn-secondary:hover {
+    background: #E8E4DF;
+    color: #0f1a1f;
+}
+
+/* Dark mode stats */
+html:not([data-theme="light"]) .about-stats,
+html:not([data-theme="light"]) .competition-stats,
+html:not([data-theme="light"]) .overview-stats {
+    border-top-color: rgba(151, 107, 88, 0.5);
+}
+
+html:not([data-theme="light"]) .stat-number {
+    color: #9CA970;
+}
+
+html:not([data-theme="light"]) .stat-label {
+    color: rgba(212, 195, 177, 0.8);
+}
+
+/* Dark mode LinkedIn links */
+html:not([data-theme="light"]) .linkedin-link,
+html:not([data-theme="light"]) .member-linkedin {
+    background: rgba(66, 83, 90, 0.3);
+    border-color: rgba(212, 195, 177, 0.18);
+    color: rgba(212, 195, 177, 0.8);
+}
+
+html:not([data-theme="light"]) .linkedin-link:hover,
+html:not([data-theme="light"]) .member-linkedin:hover {
+    background: #9CA970;
+    border-color: #9CA970;
+    color: #0f1a1f;
+}
+
+/* Dark mode social links */
+html:not([data-theme="light"]) .social-link {
+    background: rgba(255, 255, 255, 0.08);
+    border-color: rgba(255, 255, 255, 0.15);
+}
+
+html:not([data-theme="light"]) .social-link:hover {
+    background: #9CA970;
+    border-color: #9CA970;
+    color: #0f1a1f;
+}
+
+/* Dark mode packages */
+html:not([data-theme="light"]) .package-tier {
+    color: #D2B493;
+}
+
+html:not([data-theme="light"]) .package-benefits li {
+    color: rgba(212, 195, 177, 0.8);
+    border-bottom-color: rgba(212, 195, 177, 0.15);
+}
+
+/* Dark mode donate */
+html:not([data-theme="light"]) .donate-card {
+    background: rgba(66, 83, 90, 0.25);
+    border-color: #976B58;
+}
+
+/* Dark mode blockquote */
+html:not([data-theme="light"]) .mission-content blockquote {
+    background: rgba(66, 83, 90, 0.25);
+    border-left-color: #D2B493;
+    color: rgba(212, 195, 177, 0.85);
+}
+
+/* Dark mode featured subteam */
+html:not([data-theme="light"]) .subteam-featured {
+    background: linear-gradient(135deg, #0f1a1f 0%, #425373 100%);
+}
+
+html:not([data-theme="light"]) .subteam-featured p {
+    color: rgba(212, 195, 177, 0.85);
+}
+
+/* Dark mode join section */
+html:not([data-theme="light"]) .join {
+    background: linear-gradient(135deg, #0f1a1f 0%, #1a2a2a 100%);
+}
+
+html:not([data-theme="light"]) .join-title {
+    color: #E8E4DF;
+}
+
+html:not([data-theme="light"]) .join-title .accent {
+    color: #D2B493;
+}
+
+html:not([data-theme="light"]) .join-subtitle {
+    color: rgba(212, 195, 177, 0.75);
+}
+
+html:not([data-theme="light"]) .join-feature {
+    color: rgba(232, 228, 223, 0.9);
+}
+
+html:not([data-theme="light"]) .join-feature svg {
+    color: #D2B493;
+}
+
+html:not([data-theme="light"]) .join-social span {
+    color: rgba(212, 195, 177, 0.5);
+}
+
+/* Dark mode home CTA */
+html:not([data-theme="light"]) .home-cta {
+    background: linear-gradient(135deg, #0f1a1f 0%, #425373 100%);
+}
+
+html:not([data-theme="light"]) .cta-content h2 {
+    color: #E8E4DF;
+}
+
+html:not([data-theme="light"]) .cta-content p {
+    color: rgba(212, 195, 177, 0.8);
+}
+
+/* Dark mode sponsor CTA */
+html:not([data-theme="light"]) .sponsor-cta {
+    background: linear-gradient(135deg, rgba(151, 107, 88, 0.15) 0%, rgba(160, 127, 92, 0.08) 100%);
+    border-color: rgba(151, 107, 88, 0.5);
+}
+
+html:not([data-theme="light"]) .sponsor-cta h3 {
+    color: #E8E4DF;
+}
+
+html:not([data-theme="light"]) .sponsor-cta p {
+    color: rgba(212, 195, 177, 0.8);
+}
+
+/* Dark mode scrollbar */
+html:not([data-theme="light"]) .history-track-container::-webkit-scrollbar-track {
+    background: rgba(66, 83, 90, 0.25);
+}
+
+html:not([data-theme="light"]) .history-track-container::-webkit-scrollbar-thumb {
+    background: #D2B493;
+}
+
 /* Reset & Base */
 *, *::before, *::after {
     margin: 0;
