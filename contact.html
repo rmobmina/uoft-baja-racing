@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UofT Baja Racing</title>
+    <link rel="icon" href="images/website_logo.png" type="image/png">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="nav">
+        <div class="nav-container">
+            <a href="index.html" class="nav-logo">
+                <img src="images/logo.png" alt="UofT Baja Racing" class="logo-img">
+            </a>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="divisions.html">Divisions</a></li>
+                <li><a href="team.html">Team</a></li>
+                <li><a href="sponsors.html">Sponsors</a></li>
+                <li><a href="media.html">Media</a></li>
+                <li><a href="contact.html" class="active">Contact</a></li>
+            </ul>
+            <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">
+                <svg class="sun-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <circle cx="12" cy="12" r="5"/>
+                    <path d="M12 1v2M12 21v2M4.22 4.22l1.42 1.42M18.36 18.36l1.42 1.42M1 12h2M21 12h2M4.22 19.78l1.42-1.42M18.36 5.64l1.42-1.42"/>
+                </svg>
+                <svg class="moon-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/>
+                </svg>
+            </button>
+            <button class="nav-mobile-toggle" id="mobileToggle" aria-label="Toggle menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="container">
+            <span class="section-tag">GET IN TOUCH</span>
+            <h1 class="page-title">CONTACT <span class="accent-forest">US</span></h1>
+            <p class="page-subtitle">Questions, partnerships, or just want to say hi? We'd love to hear from you.</p>
+        </div>
+    </section>
+
+    <!-- Contact Content -->
+    <section class="contact-section">
+        <div class="container">
+            <div class="contact-grid">
+                <!-- Contact Form -->
+                <div class="contact-form-wrapper">
+                    <h2>Send us a message</h2>
+                    <form class="contact-form" action="#" method="POST">
+                        <div class="form-group">
+                            <label for="name">Name</label>
+                            <input type="text" id="name" name="name" required placeholder="Your name">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" name="email" required placeholder="your@email.com">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="subject">Subject</label>
+                            <select id="subject" name="subject" required>
+                                <option value="" disabled selected>Select a topic</option>
+                                <option value="general">General Inquiry</option>
+                                <option value="sponsorship">Sponsorship</option>
+                                <option value="recruitment">Joining the Team</option>
+                                <option value="media">Media / Press</option>
+                                <option value="other">Other</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="message">Message</label>
+                            <textarea id="message" name="message" rows="5" required placeholder="Your message..."></textarea>
+                        </div>
+
+                        <button type="submit" class="btn btn-primary btn-large">Send Message</button>
+                    </form>
+                </div>
+
+                <!-- Contact Info -->
+                <div class="contact-info-wrapper">
+                    <div class="contact-info-card">
+                        <h3>Other ways to reach us</h3>
+
+                        <div class="contact-method">
+                            <div class="contact-icon">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <rect x="2" y="4" width="20" height="16" rx="2"/>
+                                    <path d="M22 6l-10 7L2 6"/>
+                                </svg>
+                            </div>
+                            <div class="contact-details">
+                                <span class="contact-label">Email</span>
+                                <a href="mailto:uoftbajaracing@gmail.com">uoftbajaracing@gmail.com</a>
+                            </div>
+                        </div>
+
+                        <div class="contact-method">
+                            <div class="contact-icon">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <rect x="2" y="2" width="20" height="20" rx="5"/>
+                                    <circle cx="12" cy="12" r="4"/>
+                                    <circle cx="18" cy="6" r="1.5" fill="currentColor"/>
+                                </svg>
+                            </div>
+                            <div class="contact-details">
+                                <span class="contact-label">Instagram</span>
+                                <a href="https://www.instagram.com/uoftbajaracing/" target="_blank" rel="noopener">@uoftbajaracing</a>
+                            </div>
+                        </div>
+
+                        <div class="contact-method">
+                            <div class="contact-icon">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M9 4l-5 4v3l5-4V4z"/>
+                                    <path d="M15 4l5 4v3l-5-4V4z"/>
+                                    <path d="M9 20v-6l-5-3v7l5 2z"/>
+                                    <path d="M15 20v-6l5-3v7l-5 2z"/>
+                                    <path d="M9 14l6 0"/>
+                                </svg>
+                            </div>
+                            <div class="contact-details">
+                                <span class="contact-label">Discord</span>
+                                <a href="https://discord.com/invite/hFfNZNNvQU" target="_blank" rel="noopener">discord.com/invite/hFfNZNNvQU</a>
+                            </div>
+                        </div>
+
+                        <div class="contact-method">
+                            <div class="contact-icon">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/>
+                                    <circle cx="12" cy="10" r="3"/>
+                                </svg>
+                            </div>
+                            <div class="contact-details">
+                                <span class="contact-label">Location</span>
+                                <span>256 McCaul St.<br>Toronto, Ontario M5T 1W5</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Quick Links -->
+                    <div class="contact-quick-links">
+                        <h3>Quick Links</h3>
+                        <a href="divisions.html" class="quick-link">
+                            <span>Want to join the team?</span>
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M5 12h14M12 5l7 7-7 7"/>
+                            </svg>
+                        </a>
+                        <a href="sponsors.html" class="quick-link">
+                            <span>Interested in sponsoring?</span>
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M5 12h14M12 5l7 7-7 7"/>
+                            </svg>
+                        </a>
+                        <a href="about.html" class="quick-link">
+                            <span>Learn more about us</span>
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M5 12h14M12 5l7 7-7 7"/>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <span class="footer-logo">UOFT BAJA RACING</span>
+                    <p>University of Toronto Baja Racing Team</p>
+                    <p class="footer-tagline">Engineering grit. Building legacy.</p>
+                </div>
+                <div class="footer-links">
+                    <div class="footer-col">
+                        <h4>Navigate</h4>
+                        <a href="about.html">About</a>
+                        <a href="divisions.html">Divisions</a>
+                        <a href="team.html">Team</a>
+                        <a href="sponsors.html">Sponsors</a>
+                    </div>
+                    <div class="footer-col">
+                        <h4>Connect</h4>
+                        <a href="contact.html">Contact</a>
+                        <a href="https://www.instagram.com/uoftbajaracing/" target="_blank" rel="noopener">Instagram</a>
+                        <a href="https://discord.com/invite/hFfNZNNvQU" target="_blank" rel="noopener">Discord</a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 UofT Baja Racing. All rights reserved.</p>
+                <p class="footer-uoft">Website designed & built by Reena Obmina</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

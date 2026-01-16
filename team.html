@@ -1,0 +1,508 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UofT Baja Racing</title>
+    <link rel="icon" href="images/website_logo.png" type="image/png">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="nav">
+        <div class="nav-container">
+            <a href="index.html" class="nav-logo">
+                <img src="images/logo.png" alt="UofT Baja Racing" class="logo-img">
+            </a>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="divisions.html">Divisions</a></li>
+                <li><a href="team.html" class="active">Team</a></li>
+                <li><a href="sponsors.html">Sponsors</a></li>
+                <li><a href="media.html">Media</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+            <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">
+                <svg class="sun-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <circle cx="12" cy="12" r="5"/>
+                    <path d="M12 1v2M12 21v2M4.22 4.22l1.42 1.42M18.36 18.36l1.42 1.42M1 12h2M21 12h2M4.22 19.78l1.42-1.42M18.36 5.64l1.42-1.42"/>
+                </svg>
+                <svg class="moon-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/>
+                </svg>
+            </button>
+            <button class="nav-mobile-toggle" id="mobileToggle" aria-label="Toggle menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="container">
+            <span class="section-tag">THE PEOPLE</span>
+            <h1 class="page-title">OUR <span class="accent-forest">TEAM</span></h1>
+            <p class="page-subtitle">The engineers, designers, and builders behind the machine.</p>
+        </div>
+    </section>
+
+    <!-- Leadership Section -->
+    <section class="team-section">
+        <div class="container">
+            <h2 class="team-category-title">LEADERSHIP</h2>
+
+            <div class="team-grid leadership-grid">
+                <div class="team-card">
+                    <div class="team-photo">
+                        <div class="photo-placeholder">
+                            <svg viewBox="0 0 48 48" fill="currentColor">
+                                <circle cx="24" cy="16" r="10"/>
+                                <path d="M6 44c0-10 8-18 18-18s18 8 18 18"/>
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="team-info">
+                        <h3>Qin Bei</h3>
+                        <span class="team-role">Team Captain</span>
+                        <p class="team-bio">Leading the team's technical and operational vision.</p>
+                        <a href="#" class="linkedin-link" aria-label="LinkedIn">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <rect x="2" y="2" width="20" height="20" rx="2"/>
+                                <path d="M8 11v5M8 8v.01M12 16v-5c0-1 1-2 2-2s2 1 2 2v5"/>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="team-card">
+                    <div class="team-photo">
+                        <div class="photo-placeholder">
+                            <svg viewBox="0 0 48 48" fill="currentColor">
+                                <circle cx="24" cy="16" r="10"/>
+                                <path d="M6 44c0-10 8-18 18-18s18 8 18 18"/>
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="team-info">
+                        <h3>Russell Passmore</h3>
+                        <span class="team-role">Logistics Director</span>
+                        <p class="team-bio">Coordinating team logistics and operations.</p>
+                        <a href="#" class="linkedin-link" aria-label="LinkedIn">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <rect x="2" y="2" width="20" height="20" rx="2"/>
+                                <path d="M8 11v5M8 8v.01M12 16v-5c0-1 1-2 2-2s2 1 2 2v5"/>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="team-card">
+                    <div class="team-photo">
+                        <div class="photo-placeholder">
+                            <svg viewBox="0 0 48 48" fill="currentColor">
+                                <circle cx="24" cy="16" r="10"/>
+                                <path d="M6 44c0-10 8-18 18-18s18 8 18 18"/>
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="team-info">
+                        <h3>Julie Hayes</h3>
+                        <span class="team-role">Finance Director</span>
+                        <p class="team-bio">Managing team budget and financial operations.</p>
+                        <a href="#" class="linkedin-link" aria-label="LinkedIn">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <rect x="2" y="2" width="20" height="20" rx="2"/>
+                                <path d="M8 11v5M8 8v.01M12 16v-5c0-1 1-2 2-2s2 1 2 2v5"/>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Technical Leads Section -->
+    <section class="team-section team-section-alt">
+        <div class="container">
+            <h2 class="team-category-title">TECHNICAL <span class="accent-brown">LEADS</span></h2>
+
+            <div class="team-grid leadership-grid">
+                <div class="team-card">
+                    <div class="team-photo">
+                        <div class="photo-placeholder">
+                            <svg viewBox="0 0 48 48" fill="currentColor">
+                                <circle cx="24" cy="16" r="10"/>
+                                <path d="M6 44c0-10 8-18 18-18s18 8 18 18"/>
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="team-info">
+                        <h3>Chassis Lead</h3>
+                        <span class="team-role">Mechanical Engineering</span>
+                        <a href="#" class="linkedin-link" aria-label="LinkedIn">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <rect x="2" y="2" width="20" height="20" rx="2"/>
+                                <path d="M8 11v5M8 8v.01M12 16v-5c0-1 1-2 2-2s2 1 2 2v5"/>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="team-card">
+                    <div class="team-photo">
+                        <div class="photo-placeholder">
+                            <svg viewBox="0 0 48 48" fill="currentColor">
+                                <circle cx="24" cy="16" r="10"/>
+                                <path d="M6 44c0-10 8-18 18-18s18 8 18 18"/>
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="team-info">
+                        <h3>Suspension Lead</h3>
+                        <span class="team-role">Mechanical Engineering</span>
+                        <a href="#" class="linkedin-link" aria-label="LinkedIn">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <rect x="2" y="2" width="20" height="20" rx="2"/>
+                                <path d="M8 11v5M8 8v.01M12 16v-5c0-1 1-2 2-2s2 1 2 2v5"/>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="team-card">
+                    <div class="team-photo">
+                        <div class="photo-placeholder">
+                            <svg viewBox="0 0 48 48" fill="currentColor">
+                                <circle cx="24" cy="16" r="10"/>
+                                <path d="M6 44c0-10 8-18 18-18s18 8 18 18"/>
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="team-info">
+                        <h3>Drivetrain Lead</h3>
+                        <span class="team-role">Mechanical Engineering</span>
+                        <a href="#" class="linkedin-link" aria-label="LinkedIn">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <rect x="2" y="2" width="20" height="20" rx="2"/>
+                                <path d="M8 11v5M8 8v.01M12 16v-5c0-1 1-2 2-2s2 1 2 2v5"/>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="team-card">
+                    <div class="team-photo">
+                        <div class="photo-placeholder">
+                            <svg viewBox="0 0 48 48" fill="currentColor">
+                                <circle cx="24" cy="16" r="10"/>
+                                <path d="M6 44c0-10 8-18 18-18s18 8 18 18"/>
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="team-info">
+                        <h3>Electrical Lead</h3>
+                        <span class="team-role">Electrical Engineering</span>
+                        <a href="#" class="linkedin-link" aria-label="LinkedIn">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <rect x="2" y="2" width="20" height="20" rx="2"/>
+                                <path d="M8 11v5M8 8v.01M12 16v-5c0-1 1-2 2-2s2 1 2 2v5"/>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="team-card">
+                    <div class="team-photo">
+                        <div class="photo-placeholder">
+                            <svg viewBox="0 0 48 48" fill="currentColor">
+                                <circle cx="24" cy="16" r="10"/>
+                                <path d="M6 44c0-10 8-18 18-18s18 8 18 18"/>
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="team-info">
+                        <h3>Brakes Lead</h3>
+                        <span class="team-role">Mechanical Engineering</span>
+                        <a href="#" class="linkedin-link" aria-label="LinkedIn">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <rect x="2" y="2" width="20" height="20" rx="2"/>
+                                <path d="M8 11v5M8 8v.01M12 16v-5c0-1 1-2 2-2s2 1 2 2v5"/>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="team-card">
+                    <div class="team-photo">
+                        <div class="photo-placeholder">
+                            <svg viewBox="0 0 48 48" fill="currentColor">
+                                <circle cx="24" cy="16" r="10"/>
+                                <path d="M6 44c0-10 8-18 18-18s18 8 18 18"/>
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="team-info">
+                        <h3>Steering Lead</h3>
+                        <span class="team-role">Mechanical Engineering</span>
+                        <a href="#" class="linkedin-link" aria-label="LinkedIn">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <rect x="2" y="2" width="20" height="20" rx="2"/>
+                                <path d="M8 11v5M8 8v.01M12 16v-5c0-1 1-2 2-2s2 1 2 2v5"/>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Operations Leads Section -->
+    <section class="team-section">
+        <div class="container">
+            <h2 class="team-category-title">OPERATIONS <span class="accent-brown">LEADS</span></h2>
+
+            <div class="team-grid leadership-grid">
+                <div class="team-card">
+                    <div class="team-photo">
+                        <div class="photo-placeholder">
+                            <svg viewBox="0 0 48 48" fill="currentColor">
+                                <circle cx="24" cy="16" r="10"/>
+                                <path d="M6 44c0-10 8-18 18-18s18 8 18 18"/>
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="team-info">
+                        <h3>Finance Lead</h3>
+                        <span class="team-role">Commerce</span>
+                        <a href="#" class="linkedin-link" aria-label="LinkedIn">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <rect x="2" y="2" width="20" height="20" rx="2"/>
+                                <path d="M8 11v5M8 8v.01M12 16v-5c0-1 1-2 2-2s2 1 2 2v5"/>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="team-card">
+                    <div class="team-photo">
+                        <div class="photo-placeholder">
+                            <svg viewBox="0 0 48 48" fill="currentColor">
+                                <circle cx="24" cy="16" r="10"/>
+                                <path d="M6 44c0-10 8-18 18-18s18 8 18 18"/>
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="team-info">
+                        <h3>Outreach Lead</h3>
+                        <span class="team-role">Industrial Engineering</span>
+                        <a href="#" class="linkedin-link" aria-label="LinkedIn">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <rect x="2" y="2" width="20" height="20" rx="2"/>
+                                <path d="M8 11v5M8 8v.01M12 16v-5c0-1 1-2 2-2s2 1 2 2v5"/>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Team Members Section -->
+    <section class="team-section team-section-alt">
+        <div class="container">
+            <h2 class="team-category-title">TEAM <span class="accent-brown">MEMBERS</span></h2>
+            <p class="team-section-subtitle">The dedicated students who make it all happen.</p>
+
+            <div class="members-grid">
+                <!-- Row of member cards - these would be populated with actual team members -->
+                <div class="member-card">
+                    <div class="member-avatar">
+                        <svg viewBox="0 0 48 48" fill="currentColor">
+                            <circle cx="24" cy="16" r="10"/>
+                            <path d="M6 44c0-10 8-18 18-18s18 8 18 18"/>
+                        </svg>
+                    </div>
+                    <span class="member-name">Member Name</span>
+                    <span class="member-division">Chassis</span>
+                    <a href="#" class="member-linkedin" aria-label="LinkedIn">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <rect x="2" y="2" width="20" height="20" rx="2"/>
+                            <path d="M8 11v5M8 8v.01M12 16v-5c0-1 1-2 2-2s2 1 2 2v5"/>
+                        </svg>
+                    </a>
+                </div>
+
+                <div class="member-card">
+                    <div class="member-avatar">
+                        <svg viewBox="0 0 48 48" fill="currentColor">
+                            <circle cx="24" cy="16" r="10"/>
+                            <path d="M6 44c0-10 8-18 18-18s18 8 18 18"/>
+                        </svg>
+                    </div>
+                    <span class="member-name">Member Name</span>
+                    <span class="member-division">Suspension</span>
+                    <a href="#" class="member-linkedin" aria-label="LinkedIn">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <rect x="2" y="2" width="20" height="20" rx="2"/>
+                            <path d="M8 11v5M8 8v.01M12 16v-5c0-1 1-2 2-2s2 1 2 2v5"/>
+                        </svg>
+                    </a>
+                </div>
+
+                <div class="member-card">
+                    <div class="member-avatar">
+                        <svg viewBox="0 0 48 48" fill="currentColor">
+                            <circle cx="24" cy="16" r="10"/>
+                            <path d="M6 44c0-10 8-18 18-18s18 8 18 18"/>
+                        </svg>
+                    </div>
+                    <span class="member-name">Member Name</span>
+                    <span class="member-division">Powertrain</span>
+                    <a href="#" class="member-linkedin" aria-label="LinkedIn">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <rect x="2" y="2" width="20" height="20" rx="2"/>
+                            <path d="M8 11v5M8 8v.01M12 16v-5c0-1 1-2 2-2s2 1 2 2v5"/>
+                        </svg>
+                    </a>
+                </div>
+
+                <div class="member-card">
+                    <div class="member-avatar">
+                        <svg viewBox="0 0 48 48" fill="currentColor">
+                            <circle cx="24" cy="16" r="10"/>
+                            <path d="M6 44c0-10 8-18 18-18s18 8 18 18"/>
+                        </svg>
+                    </div>
+                    <span class="member-name">Member Name</span>
+                    <span class="member-division">Electrical</span>
+                    <a href="#" class="member-linkedin" aria-label="LinkedIn">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <rect x="2" y="2" width="20" height="20" rx="2"/>
+                            <path d="M8 11v5M8 8v.01M12 16v-5c0-1 1-2 2-2s2 1 2 2v5"/>
+                        </svg>
+                    </a>
+                </div>
+
+                <div class="member-card">
+                    <div class="member-avatar">
+                        <svg viewBox="0 0 48 48" fill="currentColor">
+                            <circle cx="24" cy="16" r="10"/>
+                            <path d="M6 44c0-10 8-18 18-18s18 8 18 18"/>
+                        </svg>
+                    </div>
+                    <span class="member-name">Member Name</span>
+                    <span class="member-division">Finance</span>
+                    <a href="#" class="member-linkedin" aria-label="LinkedIn">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <rect x="2" y="2" width="20" height="20" rx="2"/>
+                            <path d="M8 11v5M8 8v.01M12 16v-5c0-1 1-2 2-2s2 1 2 2v5"/>
+                        </svg>
+                    </a>
+                </div>
+
+                <div class="member-card">
+                    <div class="member-avatar">
+                        <svg viewBox="0 0 48 48" fill="currentColor">
+                            <circle cx="24" cy="16" r="10"/>
+                            <path d="M6 44c0-10 8-18 18-18s18 8 18 18"/>
+                        </svg>
+                    </div>
+                    <span class="member-name">Member Name</span>
+                    <span class="member-division">Marketing</span>
+                    <a href="#" class="member-linkedin" aria-label="LinkedIn">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <rect x="2" y="2" width="20" height="20" rx="2"/>
+                            <path d="M8 11v5M8 8v.01M12 16v-5c0-1 1-2 2-2s2 1 2 2v5"/>
+                        </svg>
+                    </a>
+                </div>
+
+                <div class="member-card">
+                    <div class="member-avatar">
+                        <svg viewBox="0 0 48 48" fill="currentColor">
+                            <circle cx="24" cy="16" r="10"/>
+                            <path d="M6 44c0-10 8-18 18-18s18 8 18 18"/>
+                        </svg>
+                    </div>
+                    <span class="member-name">Member Name</span>
+                    <span class="member-division">Outreach</span>
+                    <a href="#" class="member-linkedin" aria-label="LinkedIn">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <rect x="2" y="2" width="20" height="20" rx="2"/>
+                            <path d="M8 11v5M8 8v.01M12 16v-5c0-1 1-2 2-2s2 1 2 2v5"/>
+                        </svg>
+                    </a>
+                </div>
+
+                <div class="member-card">
+                    <div class="member-avatar">
+                        <svg viewBox="0 0 48 48" fill="currentColor">
+                            <circle cx="24" cy="16" r="10"/>
+                            <path d="M6 44c0-10 8-18 18-18s18 8 18 18"/>
+                        </svg>
+                    </div>
+                    <span class="member-name">Member Name</span>
+                    <span class="member-division">Chassis</span>
+                    <a href="#" class="member-linkedin" aria-label="LinkedIn">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <rect x="2" y="2" width="20" height="20" rx="2"/>
+                            <path d="M8 11v5M8 8v.01M12 16v-5c0-1 1-2 2-2s2 1 2 2v5"/>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Join CTA -->
+    <section class="team-cta">
+        <div class="container">
+            <div class="team-cta-content">
+                <h2>Want to be on this page?</h2>
+                <p>We're always looking for driven students to join our team.</p>
+                <a href="https://docs.google.com/forms/d/e/1FAIpQLSdQ2hiKk3E4BTA7dAjsORhx79VLOwjdXwZcrNuZdP5mUQzAuw/viewform" class="btn btn-primary" target="_blank" rel="noopener">Join Us</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <span class="footer-logo">UOFT BAJA RACING</span>
+                    <p>University of Toronto Baja Racing Team</p>
+                    <p class="footer-tagline">Engineering grit. Building legacy.</p>
+                </div>
+                <div class="footer-links">
+                    <div class="footer-col">
+                        <h4>Navigate</h4>
+                        <a href="about.html">About</a>
+                        <a href="divisions.html">Divisions</a>
+                        <a href="team.html">Team</a>
+                        <a href="sponsors.html">Sponsors</a>
+                    </div>
+                    <div class="footer-col">
+                        <h4>Connect</h4>
+                        <a href="contact.html">Contact</a>
+                        <a href="#">Instagram</a>
+                        <a href="#">LinkedIn</a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 UofT Baja Racing. All rights reserved.</p>
+                <p class="footer-uoft">Website designed & built by Reena Obmina</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

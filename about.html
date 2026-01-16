@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UofT Baja Racing</title>
+    <link rel="icon" href="images/website_logo.png" type="image/png">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="nav">
+        <div class="nav-container">
+            <a href="index.html" class="nav-logo">
+                <img src="images/logo.png" alt="UofT Baja Racing" class="logo-img">
+            </a>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html" class="active">About</a></li>
+                <li><a href="divisions.html">Divisions</a></li>
+                <li><a href="team.html">Team</a></li>
+                <li><a href="sponsors.html">Sponsors</a></li>
+                <li><a href="media.html">Media</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+            <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">
+                <svg class="sun-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <circle cx="12" cy="12" r="5"/>
+                    <path d="M12 1v2M12 21v2M4.22 4.22l1.42 1.42M18.36 18.36l1.42 1.42M1 12h2M21 12h2M4.22 19.78l1.42-1.42M18.36 5.64l1.42-1.42"/>
+                </svg>
+                <svg class="moon-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/>
+                </svg>
+            </button>
+            <button class="nav-mobile-toggle" id="mobileToggle" aria-label="Toggle menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="container">
+            <span class="section-tag">WHO WE ARE</span>
+            <h1 class="page-title">ABOUT <span class="accent-forest">BAJA</span></h1>
+            <p class="page-subtitle">Engineering grit. Building legacy. Racing towards the future.</p>
+        </div>
+    </section>
+
+    <!-- What is Baja SAE -->
+    <section class="about-baja">
+        <div class="container">
+            <div class="about-intro-grid">
+                <div class="about-text">
+                    <h2>What is <span class="accent-forest">Baja SAE?</span></h2>
+                    <p class="lead">Baja SAE is an intercollegiate engineering competition where student teams design, build, and race single-seat off-road vehicles from scratch.</p>
+                    <p>Every component must be designed for <strong>durability, performance, and production viability</strong> — as if 4,000 units would be manufactured annually. It's not just about building a car. It's about engineering a solution.</p>
+                </div>
+                <div class="about-image">
+                    <img src="images/503811698_3205759289586354_6666282041560755106_n.jpg" alt="UofT Baja car covered in mud after competition">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Competition Events -->
+    <section class="events-section">
+        <div class="container">
+            <h2 class="section-title">THE <span class="accent-forest">COMPETITION</span></h2>
+            <div class="events-grid">
+                <div class="event-card">
+                    <div class="event-icon">
+                        <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2">
+                            <rect x="8" y="8" width="32" height="32" rx="2"/>
+                            <path d="M16 20h16M16 28h10"/>
+                            <circle cx="36" cy="28" r="4"/>
+                        </svg>
+                    </div>
+                    <h3>Static Events</h3>
+                    <p>Design presentations, cost reports, and sales pitches judged by industry engineers.</p>
+                    <ul class="event-list">
+                        <li>Design Evaluation</li>
+                        <li>Cost Report</li>
+                        <li>Sales Presentation</li>
+                    </ul>
+                </div>
+                <div class="event-card">
+                    <div class="event-icon">
+                        <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M8 32c0-8 8-16 16-16s16 8 16 16"/>
+                            <circle cx="12" cy="36" r="4"/>
+                            <circle cx="36" cy="36" r="4"/>
+                            <path d="M24 8v8M16 12l4 4M32 12l-4 4"/>
+                        </svg>
+                    </div>
+                    <h3>Dynamic Events</h3>
+                    <p>Put the car to the test. Speed, handling, endurance — all on brutal terrain.</p>
+                    <ul class="event-list">
+                        <li>Acceleration</li>
+                        <li>Maneuverability</li>
+                        <li>4-Hour Endurance</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="competition-stats">
+                <div class="stat">
+                    <span class="stat-number">100+</span>
+                    <span class="stat-label">Teams Worldwide</span>
+                </div>
+                <div class="stat">
+                    <span class="stat-number">4hr</span>
+                    <span class="stat-label">Endurance Race</span>
+                </div>
+                <div class="stat">
+                    <span class="stat-number">10hp</span>
+                    <span class="stat-label">Engine Limit</span>
+                </div>
+                <div class="stat">
+                    <span class="stat-number">1</span>
+                    <span class="stat-label">Year to Build</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- History Section - Horizontal Scroll -->
+    <section class="history-horizontal" id="history">
+        <div class="history-header">
+            <div class="container">
+                <span class="section-tag">OUR JOURNEY</span>
+                <h2 class="section-title">THE <span class="accent-forest">BAJA LEGACY</span></h2>
+                <p class="history-instruction">Drag or scroll horizontally to explore our timeline</p>
+            </div>
+        </div>
+        <div class="history-track-container" id="historyTrack">
+            <div class="history-track">
+                <!-- Rough terrain track -->
+                <div class="track-terrain">
+                    <svg class="terrain-svg" viewBox="0 0 2400 140" preserveAspectRatio="none">
+                        <path class="terrain-fill" d="M0 90 Q120 50 240 75 T480 78 L600 78 Q720 78 840 62 T1080 92 L1200 92 Q1320 92 1440 70 T1680 100 L1800 100 Q1920 100 2040 64 T2280 96 Q2340 102 2400 90 V140 H0 Z" fill="currentColor" opacity="0.2"/>
+                        <path class="terrain-path" d="M0 90 Q120 50 240 75 T480 78 L600 78 Q720 78 840 62 T1080 92 L1200 92 Q1320 92 1440 70 T1680 100 L1800 100 Q1920 100 2040 64 T2280 96 Q2340 102 2400 90" fill="none" stroke="currentColor" stroke-width="8"/>
+                        <path class="terrain-progress" d="M0 90 Q120 50 240 75 T480 78 L600 78 Q720 78 840 62 T1080 92 L1200 92 Q1320 92 1440 70 T1680 100 L1800 100 Q1920 100 2040 64 T2280 96 Q2340 102 2400 90" fill="none" stroke="currentColor" stroke-width="8"/>
+                    </svg>
+                </div>
+
+                <!-- Moving Baja car -->
+                <div class="track-car" id="trackCar">
+                    <svg viewBox="0 0 140 70" fill="currentColor">
+                        <path d="M20 44 L28 36 L52 30 L88 30 L108 36 L118 46 L128 46 L128 52 L20 52 Z" fill="currentColor"/>
+                        <path d="M44 28 L54 16 L86 16 L102 28" fill="none" stroke="currentColor" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+                        <rect x="68" y="20" width="18" height="10" rx="2" fill="var(--bg-primary)" opacity="0.5"/>
+                        <circle cx="38" cy="52" r="10" fill="currentColor"/>
+                        <circle cx="104" cy="52" r="10" fill="currentColor"/>
+                        <circle cx="38" cy="52" r="5" fill="var(--bg-primary)"/>
+                        <circle cx="104" cy="52" r="5" fill="var(--bg-primary)"/>
+                        <path d="M58 30 L72 44" stroke="var(--bg-primary)" stroke-width="4" stroke-linecap="round"/>
+                        <path d="M90 30 L104 44" stroke="var(--bg-primary)" stroke-width="4" stroke-linecap="round"/>
+                        <!-- Dust particles -->
+                        <circle cx="10" cy="52" r="4" fill="currentColor" opacity="0.4" class="dust dust-1"/>
+                        <circle cx="14" cy="58" r="3" fill="currentColor" opacity="0.3" class="dust dust-2"/>
+                        <circle cx="6" cy="48" r="3" fill="currentColor" opacity="0.3" class="dust dust-3"/>
+                    </svg>
+                </div>
+
+                <!-- Milestones -->
+                <div class="history-milestones">
+                    <div class="milestone" data-year="2012">
+                        <div class="milestone-marker">
+                            <div class="marker-rock"></div>
+                        </div>
+                        <div class="milestone-content">
+                            <span class="milestone-year">2012</span>
+                            <h3>THE BEGINNING</h3>
+                            <p>UofT Baja Racing is founded. A group of passionate engineering students set out to build their first off-road vehicle.</p>
+                        </div>
+                    </div>
+
+                    <div class="milestone" data-year="2014">
+                        <div class="milestone-marker">
+                            <div class="marker-rock"></div>
+                        </div>
+                        <div class="milestone-content">
+                            <span class="milestone-year">2014</span>
+                            <h3>FIRST COMPETITION</h3>
+                            <p>The team enters their first Baja SAE competition, learning hard lessons about durability and teamwork.</p>
+                        </div>
+                    </div>
+
+                    <div class="milestone" data-year="2016">
+                        <div class="milestone-marker">
+                            <div class="marker-rock"></div>
+                        </div>
+                        <div class="milestone-content">
+                            <span class="milestone-year">2016</span>
+                            <h3>GROWING STRONG</h3>
+                            <p>With improved designs and a growing team, UofT Baja begins making a name in the competition circuit.</p>
+                        </div>
+                    </div>
+
+                    <div class="milestone" data-year="2019">
+                        <div class="milestone-marker">
+                            <div class="marker-rock"></div>
+                        </div>
+                        <div class="milestone-content">
+                            <span class="milestone-year">2019</span>
+                            <h3>THE PAUSE</h3>
+                            <p>Operations wind down due to various challenges. The team goes dormant, but the spirit never dies.</p>
+                        </div>
+                    </div>
+
+                    <div class="milestone" data-year="2024">
+                        <div class="milestone-marker">
+                            <div class="marker-rock"></div>
+                        </div>
+                        <div class="milestone-content">
+                            <span class="milestone-year">2024</span>
+                            <h3>THE REVIVAL</h3>
+                            <p>A new generation of students resurrects UofT Baja. Fresh energy, new vision, same grit.</p>
+                        </div>
+                    </div>
+
+                    <div class="milestone milestone-future" data-year="2026">
+                        <div class="milestone-marker">
+                            <div class="marker-flag"></div>
+                        </div>
+                        <div class="milestone-content">
+                            <span class="milestone-year">2026</span>
+                            <h3>SPRING COMPETITION</h3>
+                            <p>The road ahead. Our new car hits the track. This is where we prove ourselves.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="history-progress">
+            <div class="container">
+                <div class="progress-bar">
+                    <div class="progress-fill" id="historyProgress"></div>
+                </div>
+                <div class="progress-years">
+                    <span>2012</span>
+                    <span>2026</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Mission Section -->
+    <section class="mission-section">
+        <div class="container">
+            <div class="mission-content">
+                <h2>OUR <span class="accent-forest">MISSION</span></h2>
+                <blockquote>
+                    "To provide University of Toronto students with hands-on engineering experience through the design, manufacture, and racing of a competitive off-road vehicle — building not just machines, but engineers."
+                </blockquote>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <span class="footer-logo">UOFT BAJA RACING</span>
+                    <p>University of Toronto Baja Racing Team</p>
+                    <p class="footer-tagline">Engineering grit. Building legacy.</p>
+                </div>
+                <div class="footer-links">
+                    <div class="footer-col">
+                        <h4>Navigate</h4>
+                        <a href="about.html">About</a>
+                        <a href="divisions.html">Divisions</a>
+                        <a href="team.html">Team</a>
+                        <a href="sponsors.html">Sponsors</a>
+                    </div>
+                    <div class="footer-col">
+                        <h4>Connect</h4>
+                        <a href="contact.html">Contact</a>
+                        <a href="#">Instagram</a>
+                        <a href="#">LinkedIn</a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 UofT Baja Racing. All rights reserved.</p>
+                <p class="footer-uoft">Website designed & built by Reena Obmina</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

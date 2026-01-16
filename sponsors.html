@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UofT Baja Racing</title>
+    <link rel="icon" href="images/website_logo.png" type="image/png">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="nav">
+        <div class="nav-container">
+            <a href="index.html" class="nav-logo">
+                <img src="images/logo.png" alt="UofT Baja Racing" class="logo-img">
+            </a>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="divisions.html">Divisions</a></li>
+                <li><a href="team.html">Team</a></li>
+                <li><a href="sponsors.html" class="active">Sponsors</a></li>
+                <li><a href="media.html">Media</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+            <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">
+                <svg class="sun-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <circle cx="12" cy="12" r="5"/>
+                    <path d="M12 1v2M12 21v2M4.22 4.22l1.42 1.42M18.36 18.36l1.42 1.42M1 12h2M21 12h2M4.22 19.78l1.42-1.42M18.36 5.64l1.42-1.42"/>
+                </svg>
+                <svg class="moon-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/>
+                </svg>
+            </button>
+            <button class="nav-mobile-toggle" id="mobileToggle" aria-label="Toggle menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="container">
+            <span class="section-tag">OUR PARTNERS</span>
+            <h1 class="page-title">SPONSORS</h1>
+            <p class="page-subtitle">The companies and individuals who make our vision possible.</p>
+        </div>
+    </section>
+
+    <!-- Sponsor Message -->
+    <section class="sponsor-message-section">
+        <div class="container">
+            <blockquote class="sponsor-quote">
+                "Every bolt, every weld, every late-night test run — made possible by our sponsors. Your support doesn't just fund a project. It builds engineers."
+            </blockquote>
+        </div>
+    </section>
+
+    <!-- Sponsor Tiers -->
+    <section class="sponsor-tiers-section">
+        <div class="container">
+            <!-- Diamond Tier -->
+            <div class="sponsor-tier diamond">
+                <h2 class="tier-name">
+                    <svg viewBox="0 0 24 24" fill="currentColor">
+                        <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/>
+                    </svg>
+                    Diamond
+                </h2>
+                <div class="tier-logos">
+                    <div class="sponsor-logo-large">
+                        <img src="images/kenesto_logo.png" alt="Kenesto">
+                    </div>
+                </div>
+            </div>
+
+            <!-- Platinum Tier -->
+            <div class="sponsor-tier platinum">
+                <h2 class="tier-name">Platinum</h2>
+                <div class="tier-logos">
+                    <div class="sponsor-logo-medium">
+                        <img src="images/skule_logo.png" alt="SKULE">
+                    </div>
+                </div>
+            </div>
+
+            <!-- Silver Tier -->
+            <div class="sponsor-tier silver">
+                <h2 class="tier-name">Silver</h2>
+                <div class="tier-logos">
+                    <div class="sponsor-logo-small">
+                        <img src="images/solidworks_logo.png" alt="SolidWorks">
+                    </div>
+                    <div class="sponsor-logo-small">
+                        <img src="images/ansys_logo.png" alt="ANSYS">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Sponsor Section -->
+    <section class="why-sponsor-section">
+        <div class="container">
+            <h2 class="section-title">WHY <span class="accent-forest">SPONSOR US?</span></h2>
+
+            <div class="benefits-grid">
+                <div class="benefit-card">
+                    <div class="benefit-icon">
+                        <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2">
+                            <circle cx="24" cy="24" r="16"/>
+                            <path d="M24 8v32M8 24h32"/>
+                        </svg>
+                    </div>
+                    <h3>Brand Visibility</h3>
+                    <p>Your logo on our car, website, team apparel, and competition displays seen by thousands.</p>
+                </div>
+
+                <div class="benefit-card">
+                    <div class="benefit-icon">
+                        <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2">
+                            <circle cx="24" cy="16" r="8"/>
+                            <path d="M8 40c0-8 7-14 16-14s16 6 16 14"/>
+                        </svg>
+                    </div>
+                    <h3>Talent Pipeline</h3>
+                    <p>Direct access to driven engineering students for internships and full-time recruitment.</p>
+                </div>
+
+                <div class="benefit-card">
+                    <div class="benefit-icon">
+                        <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M24 4l6 12h14l-10 8 4 14-14-10-14 10 4-14-10-8h14z"/>
+                        </svg>
+                    </div>
+                    <h3>Support Innovation</h3>
+                    <p>Fuel the next generation of engineers and support hands-on technical education.</p>
+                </div>
+
+                <div class="benefit-card">
+                    <div class="benefit-icon">
+                        <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2">
+                            <rect x="8" y="8" width="32" height="32" rx="4"/>
+                            <path d="M16 24l6 6 10-12"/>
+                        </svg>
+                    </div>
+                    <h3>Tax Benefits</h3>
+                    <p>Contributions may be tax-deductible as educational donations through UofT.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sponsorship Packages -->
+    <section class="packages-section">
+        <div class="container">
+            <h2 class="section-title">SPONSORSHIP <span class="accent-forest">PACKAGES</span></h2>
+
+            <div class="packages-grid">
+                <div class="package-card">
+                    <span class="package-tier">Bronze Sponsor</span>
+                    <span class="package-price">$250+ CAD</span>
+                    <ul class="package-benefits">
+                        <li>Invitation to team events</li>
+                        <li>Logo featured on the UTBR website</li>
+                    </ul>
+                </div>
+
+                <div class="package-card">
+                    <span class="package-tier">Silver Sponsor</span>
+                    <span class="package-price">$500+ CAD</span>
+                    <ul class="package-benefits">
+                        <li>Invitation to team events</li>
+                        <li>Logo featured on the UTBR website</li>
+                        <li>Small (S) logo placement on the car</li>
+                    </ul>
+                </div>
+
+                <div class="package-card">
+                    <span class="package-tier">Gold Sponsor</span>
+                    <span class="package-price">$1,000+ CAD</span>
+                    <ul class="package-benefits">
+                        <li>Invitation to team events</li>
+                        <li>Logo featured on the UTBR website</li>
+                        <li>Medium (M) logo placement on the car</li>
+                        <li>Social media features</li>
+                    </ul>
+                </div>
+
+                <div class="package-card featured">
+                    <span class="package-tier">Platinum Sponsor</span>
+                    <span class="package-price">$2,500+ CAD</span>
+                    <ul class="package-benefits">
+                        <li>Invitation to team events</li>
+                        <li>Logo featured on the UTBR website</li>
+                        <li>Large (L) logo placement on the car</li>
+                        <li>Social media features</li>
+                        <li>Logo on team apparel</li>
+                        <li>On-campus tour of the UTBR workshop</li>
+                    </ul>
+                </div>
+
+                <div class="package-card">
+                    <span class="package-tier">Diamond Sponsor</span>
+                    <span class="package-price">$5,000+ CAD</span>
+                    <ul class="package-benefits">
+                        <li>Invitation to team events</li>
+                        <li>Logo featured on the UTBR website</li>
+                        <li>Extra-Large (XL) logo placement on the car</li>
+                        <li>Social media features</li>
+                        <li>Logo on team apparel</li>
+                        <li>On-campus tour of the UTBR workshop</li>
+                        <li>Complimentary team merchandise</li>
+                        <li>Dedicated company profile on the UTBR website</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="packages-cta">
+                <p>Custom packages available. Let's build something together.</p>
+                <div class="packages-buttons">
+                    <a href="contact.html" class="btn btn-primary">Contact Us</a>
+                    <a href="UTBR_Sponsorship_Package_2025–2026.pdf" class="btn btn-secondary" download>Download Sponsorship Package</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Donate Section -->
+    <section class="donate-section">
+        <div class="container">
+            <div class="donate-content">
+                <div class="donate-text">
+                    <h2>SUPPORT <span class="accent-forest">OUR MISSION</span></h2>
+                    <p>Not a company? You can still make a difference. Individual donations of any size help us purchase materials, attend competitions, and provide opportunities for students.</p>
+                    <p>Every contribution brings us closer to the finish line.</p>
+                </div>
+                <div class="donate-action">
+                    <div class="donate-card">
+                        <h3>Make a Donation</h3>
+                        <p>Support student engineering education at UofT.</p>
+                        <a href="#" class="btn btn-primary btn-large">Donate Now</a>
+                        <span class="donate-note">Donations processed through University of Toronto</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact CTA -->
+    <section class="sponsor-contact-cta">
+        <div class="container">
+            <h2>Interested in partnering?</h2>
+            <p>We'd love to hear from you. Let's discuss how we can work together.</p>
+            <a href="contact.html" class="btn btn-primary">Get in Touch</a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <span class="footer-logo">UOFT BAJA RACING</span>
+                    <p>University of Toronto Baja Racing Team</p>
+                    <p class="footer-tagline">Engineering grit. Building legacy.</p>
+                </div>
+                <div class="footer-links">
+                    <div class="footer-col">
+                        <h4>Navigate</h4>
+                        <a href="about.html">About</a>
+                        <a href="divisions.html">Divisions</a>
+                        <a href="team.html">Team</a>
+                        <a href="sponsors.html">Sponsors</a>
+                    </div>
+                    <div class="footer-col">
+                        <h4>Connect</h4>
+                        <a href="contact.html">Contact</a>
+                        <a href="#">Instagram</a>
+                        <a href="#">LinkedIn</a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 UofT Baja Racing. All rights reserved.</p>
+                <p class="footer-uoft">Website designed & built by Reena Obmina</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

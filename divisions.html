@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UofT Baja Racing</title>
+    <link rel="icon" href="images/website_logo.png" type="image/png">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="nav">
+        <div class="nav-container">
+            <a href="index.html" class="nav-logo">
+                <img src="images/logo.png" alt="UofT Baja Racing" class="logo-img">
+            </a>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="divisions.html" class="active">Divisions</a></li>
+                <li><a href="team.html">Team</a></li>
+                <li><a href="sponsors.html">Sponsors</a></li>
+                <li><a href="media.html">Media</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+            <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">
+                <svg class="sun-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <circle cx="12" cy="12" r="5"/>
+                    <path d="M12 1v2M12 21v2M4.22 4.22l1.42 1.42M18.36 18.36l1.42 1.42M1 12h2M21 12h2M4.22 19.78l1.42-1.42M18.36 5.64l1.42-1.42"/>
+                </svg>
+                <svg class="moon-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/>
+                </svg>
+            </button>
+            <button class="nav-mobile-toggle" id="mobileToggle" aria-label="Toggle menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="container">
+            <span class="section-tag">OUR STRUCTURE</span>
+            <h1 class="page-title">DIVISIONS</h1>
+            <p class="page-subtitle">Seven specialized teams. One unified mission. Find where you fit.</p>
+        </div>
+    </section>
+
+    <!-- Divisions Intro -->
+    <section class="divisions-intro">
+        <div class="container">
+            <p class="lead-text">Every member plays a critical role. Whether you're into fabrication, finance, or everything in between — there's a place for you on UofT Baja.</p>
+        </div>
+    </section>
+
+    <!-- Technical Divisions -->
+    <section class="divisions-section">
+        <div class="container">
+            <h2 class="division-category">TECHNICAL <span class="accent-forest">DIVISIONS</span></h2>
+            <p class="category-description">The engineering core — designing and building every system of our vehicle.</p>
+
+            <div class="divisions-grid">
+                <div class="division-card">
+                    <div class="division-icon">
+                        <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2">
+                            <circle cx="24" cy="24" r="10"/>
+                            <path d="M24 8v8M24 32v8M8 24h8M32 24h8"/>
+                        </svg>
+                    </div>
+                    <div class="division-content">
+                        <h3>Brakes</h3>
+                        <p>Design the braking system that keeps the car safe and responsive. From pedal box to calipers, every component is sized and tested for control.</p>
+                        <div class="division-skills">
+                            <span>Hydraulics</span>
+                            <span>Brake Sizing</span>
+                            <span>Safety</span>
+                            <span>Testing</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="division-card">
+                    <div class="division-icon">
+                        <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M8 40L16 24 24 32 32 16 40 24"/>
+                            <path d="M8 40h32"/>
+                            <path d="M12 8l4 8h16l4-8"/>
+                        </svg>
+                    </div>
+                    <div class="division-content">
+                        <h3>Chassis</h3>
+                        <p>The skeleton of our car. Design and fabricate the roll cage, frame geometry, and structural components that keep our driver safe and our car rigid.</p>
+                        <div class="division-skills">
+                            <span>SolidWorks</span>
+                            <span>FEA Analysis</span>
+                            <span>Welding</span>
+                            <span>Tube Bending</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="division-card">
+                    <div class="division-icon">
+                        <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2">
+                            <circle cx="24" cy="24" r="12"/>
+                            <circle cx="24" cy="24" r="4"/>
+                            <path d="M24 12v4M24 32v4M12 24h4M32 24h4"/>
+                            <path d="M17 17l2 2M29 29l2 2M17 31l2-2M29 19l2-2"/>
+                        </svg>
+                    </div>
+                    <div class="division-content">
+                        <h3>Drivetrain</h3>
+                        <p>Engine, transmission, CVT, and drivetrain — the heart that powers our machine. Optimize power delivery to the wheels.</p>
+                        <div class="division-skills">
+                            <span>CVT Calibration</span>
+                            <span>Gear Ratios</span>
+                            <span>Torque Analysis</span>
+                            <span>Dyno Testing</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="division-card">
+                    <div class="division-icon">
+                        <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M20 8v32M28 8v32"/>
+                            <path d="M12 16h24M12 32h24"/>
+                            <circle cx="24" cy="24" r="4"/>
+                            <path d="M8 24h4M36 24h4"/>
+                        </svg>
+                    </div>
+                    <div class="division-content">
+                        <h3>Electrical</h3>
+                        <p>Wiring, sensors, data acquisition, and control systems. Bring intelligence to raw power with instrumentation and telemetry.</p>
+                        <div class="division-skills">
+                            <span>Wiring Looms</span>
+                            <span>Data Logging</span>
+                            <span>Sensor Integration</span>
+                            <span>PCB Design</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="division-card">
+                    <div class="division-icon">
+                        <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2">
+                            <circle cx="24" cy="24" r="12"/>
+                            <path d="M24 12v8M24 28v8M12 24h8M28 24h8"/>
+                        </svg>
+                    </div>
+                    <div class="division-content">
+                        <h3>Steering</h3>
+                        <p>Steering geometry, rack design, and driver ergonomics. Build a system that feels precise and confident on rough terrain.</p>
+                        <div class="division-skills">
+                            <span>Ackermann</span>
+                            <span>Steering Rack</span>
+                            <span>Ergonomics</span>
+                            <span>CAD</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="division-card">
+                    <div class="division-icon">
+                        <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2">
+                            <circle cx="12" cy="36" r="6"/>
+                            <circle cx="36" cy="36" r="6"/>
+                            <path d="M12 30V20l12-8 12 8v10"/>
+                            <path d="M18 36h12"/>
+                        </svg>
+                    </div>
+                    <div class="division-content">
+                        <h3>Suspension</h3>
+                        <p>Design the geometry that keeps us stable and controlled over any terrain. From A-arms to shocks, every component is engineered for performance.</p>
+                        <div class="division-skills">
+                            <span>Kinematics</span>
+                            <span>Shock Tuning</span>
+                            <span>FEA</span>
+                            <span>CNC Machining</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Operations Divisions -->
+    <section class="divisions-section divisions-ops">
+        <div class="container">
+            <h2 class="division-category">OPERATIONS <span class="accent-forest">DIVISIONS</span></h2>
+            <p class="category-description">The backbone of our team — keeping us funded, visible, and connected.</p>
+
+            <div class="divisions-grid">
+                <div class="division-card">
+                    <div class="division-icon">
+                        <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2">
+                            <rect x="8" y="12" width="32" height="24" rx="2"/>
+                            <path d="M16 24h16M16 30h8"/>
+                            <circle cx="32" cy="28" r="4"/>
+                        </svg>
+                    </div>
+                    <div class="division-content">
+                        <h3>Finance</h3>
+                        <p>Budget management, funding allocation, grant applications, and financial strategy. Keep the wheels turning with smart resource management.</p>
+                        <div class="division-skills">
+                            <span>Budgeting</span>
+                            <span>Excel/Sheets</span>
+                            <span>Grant Writing</span>
+                            <span>Financial Planning</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="division-card">
+                    <div class="division-icon">
+                        <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2">
+                            <circle cx="24" cy="16" r="8"/>
+                            <path d="M8 40c0-8 7-14 16-14s16 6 16 14"/>
+                            <path d="M32 12l8-4M32 20l8 4"/>
+                        </svg>
+                    </div>
+                    <div class="division-content">
+                        <h3>Outreach</h3>
+                        <p>Community engagement, sponsor relations, industry partnerships, and recruitment. Build connections that help our team grow and thrive.</p>
+                        <div class="division-skills">
+                            <span>Communication</span>
+                            <span>Event Planning</span>
+                            <span>Networking</span>
+                            <span>Public Speaking</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Join CTA Section -->
+    <section class="join-section">
+        <div class="join-bg">
+            <div class="join-grid"></div>
+        </div>
+        <div class="container">
+            <div class="join-content">
+                <h2>BUILD <span class="accent-white">SOMETHING REAL</span></h2>
+                <p class="join-subtitle">No experience required. Just bring your drive.</p>
+
+                <div class="join-features">
+                    <div class="join-feature">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/>
+                            <polyline points="22 4 12 14.01 9 11.01"/>
+                        </svg>
+                        <span>Hands-on engineering experience</span>
+                    </div>
+                    <div class="join-feature">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/>
+                            <polyline points="22 4 12 14.01 9 11.01"/>
+                        </svg>
+                        <span>Work with industry-standard tools</span>
+                    </div>
+                    <div class="join-feature">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/>
+                            <polyline points="22 4 12 14.01 9 11.01"/>
+                        </svg>
+                        <span>Compete at the national level</span>
+                    </div>
+                    <div class="join-feature">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/>
+                            <polyline points="22 4 12 14.01 9 11.01"/>
+                        </svg>
+                        <span>Join a legacy being rebuilt</span>
+                    </div>
+                </div>
+
+                <div class="join-cta-buttons">
+                    <a href="https://docs.google.com/forms/d/e/1FAIpQLSdQ2hiKk3E4BTA7dAjsORhx79VLOwjdXwZcrNuZdP5mUQzAuw/viewform" class="btn btn-primary btn-large" target="_blank" rel="noopener">Apply Now</a>
+                    <a href="contact.html" class="btn btn-secondary">Have Questions?</a>
+                </div>
+
+                <!-- Social links removed -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <span class="footer-logo">UOFT BAJA RACING</span>
+                    <p>University of Toronto Baja Racing Team</p>
+                    <p class="footer-tagline">Engineering grit. Building legacy.</p>
+                </div>
+                <div class="footer-links">
+                    <div class="footer-col">
+                        <h4>Navigate</h4>
+                        <a href="about.html">About</a>
+                        <a href="divisions.html">Divisions</a>
+                        <a href="team.html">Team</a>
+                        <a href="sponsors.html">Sponsors</a>
+                    </div>
+                    <div class="footer-col">
+                        <h4>Connect</h4>
+                        <a href="contact.html">Contact</a>
+                        <a href="#">Instagram</a>
+                        <a href="#">LinkedIn</a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 UofT Baja Racing. All rights reserved.</p>
+                <p class="footer-uoft">Website designed & built by Reena Obmina</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
