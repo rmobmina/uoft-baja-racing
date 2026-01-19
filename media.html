@@ -52,40 +52,94 @@
         </div>
     </section>
 
+    <!-- Instagram Highlights -->
+    <section class="media-section media-instagram-section">
+        <div class="container">
+            <div class="media-section-header">
+                <span class="section-tag">LIVE FEED</span>
+                <h2 class="section-title">FROM <span class="accent-forest">INSTAGRAM</span></h2>
+            </div>
+            <div class="instagram-grid">
+                <div class="instagram-embed">
+                    <blockquote class="instagram-media" data-instgrm-permalink="https://www.instagram.com/p/DQFIXLpjg9_/" data-instgrm-version="14"></blockquote>
+                </div>
+                <div class="instagram-embed">
+                    <blockquote class="instagram-media" data-instgrm-permalink="https://www.instagram.com/p/DO1QSK1jmBw/" data-instgrm-version="14"></blockquote>
+                </div>
+                <div class="instagram-embed">
+                    <blockquote class="instagram-media" data-instgrm-permalink="https://www.instagram.com/p/DObLcvqjuLA/" data-instgrm-version="14"></blockquote>
+                </div>
+                <div class="instagram-embed">
+                    <blockquote class="instagram-media" data-instgrm-permalink="https://www.instagram.com/p/DNG7gwOOYnW/" data-instgrm-version="14"></blockquote>
+                </div>
+                <div class="instagram-embed">
+                    <blockquote class="instagram-media" data-instgrm-permalink="https://www.instagram.com/p/DGO0eT1utpk/" data-instgrm-version="14"></blockquote>
+                </div>
+            </div>
+            <div class="media-section-cta">
+                <a href="https://www.instagram.com/uoftbajaracing/" class="btn btn-secondary" target="_blank" rel="noopener">Follow @uoftbajaracing</a>
+            </div>
+        </div>
+    </section>
+
     <!-- Media Gallery -->
     <section class="media-section">
         <div class="container">
-            <div class="media-grid">
-                <div class="media-card">
+            <div class="media-section-header">
+                <span class="section-tag">GALLERY</span>
+                <h2 class="section-title">BAJA <span class="accent-forest">MOMENTS</span></h2>
+            </div>
+            <div class="media-grid media-grid-mosaic">
+                <div class="media-card wide">
                     <img src="images/459627603_2926794484149504_6827768942688131347_n.jpg" alt="UofT Baja Racing media 1">
+                    <div class="media-card-overlay"><span>View</span></div>
                 </div>
                 <div class="media-card">
                     <img src="images/462684637_2959355104226775_2333907522414473951_n.jpg" alt="UofT Baja Racing media 2">
+                    <div class="media-card-overlay"><span>View</span></div>
                 </div>
-                <div class="media-card">
+                <div class="media-card tall">
                     <img src="images/462694355_2959355217560097_9007755663154921911_n.jpg" alt="UofT Baja Racing media 3">
+                    <div class="media-card-overlay"><span>View</span></div>
                 </div>
                 <div class="media-card">
                     <img src="images/462744222_2959355564226729_5200937983011150498_n.jpg" alt="UofT Baja Racing media 4">
+                    <div class="media-card-overlay"><span>View</span></div>
                 </div>
                 <div class="media-card">
                     <img src="images/462870608_2959355100893442_1646107229632767399_n.jpg" alt="UofT Baja Racing media 5">
+                    <div class="media-card-overlay"><span>View</span></div>
                 </div>
-                <div class="media-card">
+                <div class="media-card wide">
                     <img src="images/462879314_2959355824226703_3388402324975802182_n.jpg" alt="UofT Baja Racing media 6">
+                    <div class="media-card-overlay"><span>View</span></div>
                 </div>
                 <div class="media-card">
                     <img src="images/462915220_2959355807560038_4715614379783030717_n.jpg" alt="UofT Baja Racing media 7">
+                    <div class="media-card-overlay"><span>View</span></div>
                 </div>
-                <div class="media-card">
+                <div class="media-card tall">
                     <img src="images/503811698_3205759289586354_6666282041560755106_n.jpg" alt="UofT Baja Racing media 8">
+                    <div class="media-card-overlay"><span>View</span></div>
                 </div>
                 <div class="media-card">
                     <img src="images/504043168_3205759376253012_5668949076599053370_n.jpg" alt="UofT Baja Racing media 9">
+                    <div class="media-card-overlay"><span>View</span></div>
                 </div>
             </div>
         </div>
     </section>
+
+    <div class="media-lightbox" id="mediaLightbox" aria-hidden="true" role="dialog" aria-modal="true">
+        <button class="lightbox-close" type="button" aria-label="Close image">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M6 6l12 12M18 6l-12 12"/>
+            </svg>
+        </button>
+        <div class="lightbox-content">
+            <img id="lightboxImage" src="" alt="">
+        </div>
+    </div>
 
     <!-- Footer -->
     <footer class="footer">
@@ -120,6 +174,7 @@
         </div>
     </footer>
 
+    <script async src="https://www.instagram.com/embed.js"></script>
     <script src="script.js"></script>
 </body>
 </html>
