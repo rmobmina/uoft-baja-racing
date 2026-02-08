@@ -4041,3 +4041,446 @@ html:not([data-theme="light"]) .join-section .join-social > span {
         grid-template-columns: 1fr;
     }
 }
+
+/* ========================================
+   COMPREHENSIVE MOBILE RESPONSIVENESS FIXES
+   ======================================== */
+
+/* -- Tablet (max-width: 1024px) -- */
+@media (max-width: 1024px) {
+    .leadership-centered {
+        gap: 24px 32px;
+    }
+
+    .sponsor-logo-large {
+        padding: 36px 56px;
+    }
+}
+
+/* -- Mobile (max-width: 768px) -- */
+@media (max-width: 768px) {
+    body {
+        font-size: 16px;
+    }
+
+    /* Typography scaling fixes - prevent clamp() minimums from overflowing */
+    .section-title {
+        font-size: clamp(2rem, 8vw, 3.5rem);
+    }
+
+    .page-title {
+        font-size: clamp(2.5rem, 10vw, 4rem);
+    }
+
+    .hero-title-line:last-child {
+        font-size: clamp(3rem, 12vw, 5rem);
+    }
+
+    .hero-title {
+        word-break: break-word;
+    }
+
+    /* Lead text */
+    .lead,
+    .lead-text {
+        font-size: 1.1rem;
+    }
+
+    /* Stats - scale down fixed 3rem */
+    .stat-number {
+        font-size: 2.25rem;
+    }
+
+    /* Milestone years */
+    .milestone-year {
+        font-size: 2.25rem;
+    }
+
+    /* Instagram embeds - full width on mobile */
+    .instagram-embed {
+        flex: 1 1 100%;
+        max-width: 100%;
+        overflow: hidden;
+    }
+
+    /* Sponsor logos - reduce padding to prevent overflow */
+    .sponsor-logo-large {
+        padding: 32px 40px;
+    }
+
+    .sponsor-logo-medium {
+        padding: 24px 32px;
+    }
+
+    .sponsor-cta {
+        padding: 40px 24px;
+    }
+
+    .sponsor-cta h3 {
+        font-size: 1.5rem;
+    }
+
+    /* Donate content */
+    .donate-card {
+        padding: 32px 24px;
+    }
+
+    /* About text heading */
+    .about-text h2 {
+        font-size: 2rem;
+    }
+
+    /* Mission blockquote */
+    .mission-content blockquote {
+        font-size: 1.1rem;
+        padding: 24px;
+    }
+
+    /* CTA headings */
+    .cta-content h2 {
+        font-size: clamp(1.75rem, 5vw, 2.5rem);
+    }
+
+    /* Division category heading */
+    .division-category {
+        font-size: 1.5rem;
+    }
+
+    /* History track padding */
+    .history-track {
+        padding: 40px 40px 160px;
+    }
+
+    /* Team CTA */
+    .team-cta {
+        padding: 60px 0;
+    }
+
+    .team-cta-content h2 {
+        font-size: 1.5rem;
+    }
+
+    /* Sponsor contact CTA */
+    .sponsor-contact-cta {
+        padding: 60px 0;
+    }
+
+    .sponsor-contact-cta h2 {
+        font-size: 1.5rem;
+    }
+
+    /* Nav mobile menu improvements */
+    .nav-links {
+        box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2);
+    }
+
+    .nav-links a {
+        font-size: 1rem;
+        padding: 8px 0;
+    }
+
+    /* Join content heading */
+    .join-content h2 {
+        font-size: clamp(2rem, 6vw, 3rem);
+    }
+
+    .join-title {
+        font-size: clamp(2rem, 6vw, 3rem);
+    }
+}
+
+/* -- Small Mobile (max-width: 480px) -- */
+@media (max-width: 480px) {
+    :root {
+        --section-padding: 60px;
+    }
+
+    body {
+        font-size: 15px;
+    }
+
+    .container {
+        padding: 0 16px;
+    }
+
+    /* Page header */
+    .page-header {
+        padding: 100px 0 40px;
+    }
+
+    .page-title {
+        font-size: clamp(2rem, 10vw, 3rem);
+    }
+
+    .page-subtitle {
+        font-size: 1rem;
+    }
+
+    /* Section title */
+    .section-title {
+        font-size: clamp(1.75rem, 8vw, 2.5rem);
+    }
+
+    /* Hero */
+    .hero-title-line:first-child {
+        font-size: clamp(1rem, 3.6vw, 1.6rem);
+    }
+
+    .hero-title-line:last-child {
+        font-size: clamp(2.5rem, 12vw, 4rem);
+    }
+
+    .hero-badge {
+        font-size: 0.65rem;
+        padding: 6px 14px;
+    }
+
+    .hero-subtitle {
+        font-size: 0.9rem;
+    }
+
+    .hero .btn {
+        padding: 10px 18px;
+        font-size: 0.75rem;
+    }
+
+    /* Stats */
+    .stat-number {
+        font-size: 2rem;
+    }
+
+    /* Buttons */
+    .btn {
+        padding: 12px 20px;
+        font-size: 0.8rem;
+    }
+
+    .btn-large {
+        padding: 14px 28px;
+        font-size: 0.875rem;
+    }
+
+    /* Sponsor logos */
+    .sponsor-logo-large {
+        padding: 24px 32px;
+    }
+
+    .sponsor-logo-large img {
+        max-width: 160px;
+    }
+
+    .sponsor-logo-medium {
+        padding: 20px 24px;
+    }
+
+    .sponsor-logo-small {
+        padding: 16px 20px;
+    }
+
+    /* Package card */
+    .package-card {
+        padding: 24px 16px;
+    }
+
+    /* Sponsor CTA */
+    .sponsor-cta {
+        padding: 32px 16px;
+    }
+
+    .sponsor-cta h3 {
+        font-size: 1.25rem;
+    }
+
+    /* Event cards */
+    .event-card {
+        padding: 24px;
+    }
+
+    .event-card h3 {
+        font-size: 1.25rem;
+    }
+
+    /* Donate */
+    .donate-card {
+        padding: 24px 16px;
+    }
+
+    .donate-text h2 {
+        font-size: 1.5rem;
+    }
+
+    /* About */
+    .about-text h2 {
+        font-size: 1.75rem;
+    }
+
+    /* Mission */
+    .mission-content h2 {
+        font-size: 1.5rem;
+    }
+
+    .mission-content blockquote {
+        font-size: 1rem;
+        padding: 20px;
+    }
+
+    /* Contact */
+    .contact-info-card {
+        padding: 24px;
+    }
+
+    /* Overview */
+    .overview-card {
+        padding: 28px 20px;
+    }
+
+    /* Subteam cards */
+    .subteam-card {
+        padding: 28px 20px;
+    }
+
+    /* Division cards */
+    .division-card {
+        padding: 24px;
+    }
+
+    /* Team photos */
+    .team-photo {
+        width: 140px;
+        height: 140px;
+    }
+
+    .member-photo {
+        width: 160px;
+        height: 160px;
+    }
+
+    /* Footer */
+    .footer {
+        padding: 60px 0 32px;
+    }
+
+    .footer-content {
+        gap: 32px;
+        margin-bottom: 32px;
+    }
+
+    .footer-logo {
+        font-size: 1.25rem;
+    }
+
+    /* Instagram grid */
+    .instagram-grid {
+        gap: 16px;
+    }
+
+    .instagram-embed {
+        padding: 8px;
+    }
+
+    /* History milestones */
+    .history-milestones {
+        gap: 120px;
+    }
+
+    .milestone {
+        width: 200px;
+    }
+
+    .milestone-year {
+        font-size: 2rem;
+    }
+
+    .milestone-content h3 {
+        font-size: 1.25rem;
+    }
+
+    /* Join section */
+    .join-title {
+        font-size: clamp(2rem, 6vw, 3rem);
+    }
+
+    .join-subtitle {
+        font-size: 1.1rem;
+    }
+
+    /* Nav links */
+    .nav-links {
+        padding: 16px;
+        gap: 12px;
+    }
+
+    /* CTA sections */
+    .home-cta {
+        padding: 48px 0;
+    }
+
+    .team-cta {
+        padding: 48px 0;
+    }
+
+    .sponsor-contact-cta {
+        padding: 48px 0;
+    }
+
+    /* Lightbox */
+    .lightbox-close {
+        top: 12px;
+        right: 12px;
+    }
+
+    /* Sponsor quote */
+    .sponsor-quote {
+        font-size: 1.1rem;
+    }
+
+    /* Sponsors message */
+    .sponsors-message p {
+        font-size: 1.1rem;
+    }
+
+    /* Nav container */
+    .nav-container {
+        padding: 0 16px;
+    }
+}
+
+/* -- Extra Small Phones (max-width: 360px) -- */
+@media (max-width: 360px) {
+    .container {
+        padding: 0 12px;
+    }
+
+    .page-title {
+        font-size: 1.75rem;
+    }
+
+    .section-title {
+        font-size: 1.5rem;
+    }
+
+    .hero-title-line:last-child {
+        font-size: 2.25rem;
+    }
+
+    .hero-badge {
+        font-size: 0.6rem;
+        padding: 5px 12px;
+    }
+
+    .stat-number {
+        font-size: 1.75rem;
+    }
+
+    .nav-container {
+        padding: 0 12px;
+    }
+
+    .sponsor-logo-large {
+        padding: 20px 24px;
+    }
+
+    .sponsor-logo-large img {
+        max-width: 140px;
+    }
+}
